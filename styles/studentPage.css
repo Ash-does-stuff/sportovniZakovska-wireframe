@@ -22,8 +22,12 @@
     background-color: aquamarine;
 }
 
-.subjectData li {
-    font-size: 2vw;
+.sector {
+    margin: 1vw;
+}
+
+.sector .content {
+    margin-left: 1.5vw;
 }
 
 .vekTabulky table {
@@ -67,5 +71,9 @@
 
 
 .ocekavaneAktivity table tr.hotovo{
+    background-color: #59ffa1;
+}
+
+.historieVysledku table tr th:nth-child(6) {
     background-color: #59ffa1;
 }
