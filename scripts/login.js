@@ -10,7 +10,7 @@ window.onload = () => {
 
 const submitDetails = () => {
     console.log(nameInput.value,passwordInput.value)
-    if (nameInput.value == "admin" && passwordInput.value == "admin") {
+    if (nameInput.value == "student" && passwordInput.value == "studemt") {
         window.location.replace("./sites/studentPage.html");
     } else {
         invalidDetailsText.style.visibility = "visible" ;

@@ -1,0 +1,28 @@
+.pageContainer {
+    width: 100vw;
+    height: 92.3vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.subjectData {
+    width: 60vw;
+
+    margin: 3vw;
+    padding: 3vw;
+
+    text-align: left;
+
+    background-color: aquamarine;
+}
+
+.subjectData li {
+    font-size: 2vw;
+}
