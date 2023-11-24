@@ -1,6 +1,5 @@
 .pageContainer {
     width: 100vw;
-    height: 92.3vh;
 
     display: flex;
     align-items: center;
@@ -27,13 +26,17 @@
     font-size: 2vw;
 }
 
+.vekTabulky table {
+    margin: 2vw;
+}
+
 .vekTabulky table tr {
     background-color: #dddddd;
 }
 
 .vekTabulky table th {
     padding: 1vw;
-    border: 0.2vw solid black;
+    border: 0.1vw solid black;
 }
 
 .vekTabulky table tr:first-child {
@@ -47,4 +50,22 @@
 
 .vekTabulky table tr th:first-child {
     background-color: #bbbbbb;   
+}
+
+.ocekavaneAktivity table {
+    margin: 2vw;
+}
+
+.ocekavaneAktivity table tr {
+    background-color: #dddddd;
+}
+
+.ocekavaneAktivity table th {
+    padding: 1vw;
+    border: 0.1vw solid black;
+}
+
+
+.ocekavaneAktivity table tr.hotovo{
+    background-color: #59ffa1;
 }
