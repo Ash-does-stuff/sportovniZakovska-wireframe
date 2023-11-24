@@ -26,3 +26,25 @@
 .subjectData li {
     font-size: 2vw;
 }
+
+.vekTabulky table tr {
+    background-color: #dddddd;
+}
+
+.vekTabulky table th {
+    padding: 1vw;
+    border: 0.2vw solid black;
+}
+
+.vekTabulky table tr:first-child {
+    background-color: #bbbbbb;
+}
+
+.vekTabulky table tr:first-child th:first-child {
+    visibility: hidden;
+    border: 0vw solid black;
+}
+
+.vekTabulky table tr th:first-child {
+    background-color: #bbbbbb;   
+}
