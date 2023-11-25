@@ -12,7 +12,10 @@ const submitDetails = () => {
     console.log(nameInput.value,passwordInput.value)
     if (nameInput.value == "student" && passwordInput.value == "student") {
         window.location.replace("./sites/studentPage-atletika.html");
-    } else {
+    } else if (nameInput.value == "ucitel" && passwordInput.value == "ucitel") {
+        window.location.replace("./sites/teacherPage.html");
+    }
+    else {
         invalidDetailsText.style.visibility = "visible" ;
     }
 }
