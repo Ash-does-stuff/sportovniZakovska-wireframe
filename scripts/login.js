@@ -10,8 +10,8 @@ window.onload = () => {
 
 const submitDetails = () => {
     console.log(nameInput.value,passwordInput.value)
-    if (nameInput.value == "student" && passwordInput.value == "studemt") {
-        window.location.replace("./sites/studentPage.html");
+    if (nameInput.value == "student" && passwordInput.value == "student") {
+        window.location.replace("./sites/studentPage-atletika.html");
     } else {
         invalidDetailsText.style.visibility = "visible" ;
     }
