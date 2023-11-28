@@ -1,0 +1,47 @@
+.pageContainer {
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.zadavaniVysledku {
+    margin: 2vw;
+}
+
+.zadavaniVysledku th {
+    background-color: #eeeeee;
+    border: 0.08vw solid black;
+}
+
+.zadavaniVysledku tr:first-child th {
+    padding: 1vw;
+
+    background-color: #aaaaaa;
+}
+
+.zadavaniVysledku tr th:first-child {
+    padding: 1vw;
+
+    background-color: #aaaaaa;
+}
+
+.zadavaniVysledku tr:first-child th:first-child {
+    background-color: white;
+    border: 0px solid black;
+}
+
+.zadavaniVysledku input {
+    background-color: #eeeeee;
+
+    border: 0px solid black;
+    border-radius: 0;
+
+   height: 7vh;
+    width: 100%
+}
