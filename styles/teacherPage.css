@@ -45,3 +45,7 @@
    height: 7vh;
     width: 100%
 }
+
+.zadavaniVysledku input:focus {
+    background-color: greenyellow;
+}
