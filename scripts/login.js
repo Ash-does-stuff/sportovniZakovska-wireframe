@@ -11,9 +11,9 @@ window.onload = () => {
 const submitDetails = () => {
     console.log(nameInput.value,passwordInput.value)
     if (nameInput.value == "student" && passwordInput.value == "student") {
-        window.location.replace("./sites/studentPage-atletika.html");
+        window.location.replace("./sites/student/studentPage-atletika.html");
     } else if (nameInput.value == "ucitel" && passwordInput.value == "ucitel") {
-        window.location.replace("./sites/teacherPage.html");
+        window.location.replace("./sites/teacher/teacherPage.html");
     }
     else {
         invalidDetailsText.style.visibility = "visible" ;
