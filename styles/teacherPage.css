@@ -10,6 +10,13 @@
     flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+padding: 0;
+}
+
+
 .classList {
     margin: 2vw;
 
