@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../styles/teacherPage.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="../../scripts/teacherPage-zadavaniVysledku2.js"></script>
 
     <title>Sportovní žákovská - stránka učitele</title>
   </head>
@@ -65,15 +66,63 @@
                     <h1>Zadávání výsledků</h1>
                 </div>
                 <br>
+
                 <div class="btn-group">
                     <h3>Skupina: </h3>
-                    <select id="group">
-                        <option value="1.IG">1.IG</option>
+                    <select id="groupSelect">
+                        <option value="1.IG" selected>1.IG</option>
                         <option value="5.AG">5.AG</option>
                         <option value="5.BG">5.BG</option>
                     </select>
                 </div>
+
+                <div class="btn-group">
+                  <h3>Kategorie: </h3>
+                  <select id="categorySelect"  onchange="setSportOpts()">
+                      <option value="atletika" selected>Atletika</option>
+                      <option value="micove-sporty">Míčové sporty</option>
+                      <option value="gymnastika">Plavání</option>
+                      <option value="ostatni">Ostatní</option>
+                  </select>
+              </div>
+
+              <div class="btn-group">
+                <h3>Sport: </h3>
+                <select id="sportSelect" onchange="setTable()"></select>
             </div>
+
+
+            <div class="zadavaniVysledku" id="resultTable">
+              <table>
+                  <tr>
+                      <th></th>
+                      <th id="sportTitle">Běh 100m</th>
+                  </tr>
+                  <tr>
+                      <th>pepa treska</th>
+                      <th><input type="number"></input></th>
+                  </tr>
+                  <tr>
+                      <th>honza kapr</th>
+                      <th><input type="number"></input></th>
+                  </tr>
+                  <tr>
+                      <th>petr konvička</th>
+                      <th><input type="number"></input></th>
+                  </tr>
+                  <tr>
+                      <th>filip frgál</th>
+                      <th><input type="number"></input></th>
+                  </tr>
+                  <tr>
+                      <th>oliver olejnatý</th>
+                      <th><input type="number"></input></th>
+                  </tr>
+              </table>
+          </div>
+
+
+              </div>
         </div>
 
     </div>
