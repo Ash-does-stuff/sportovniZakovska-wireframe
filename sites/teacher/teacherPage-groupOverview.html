@@ -60,49 +60,41 @@
         <div class="column">
           <div style="text-align: center; margin-top: 2vw">
             <h1>Jméno učitele</h1>
+            <h2 id="classTitle">Třída</h2>
           </div>
 
-          <div class="classList">
-            <h3>Seznam tříd</h3>
-            <div class="card" style="width: 18vw">
-              <ul class="list-group list-group-flush">
-                <a href="teacherPage-groupOverview.html?group=1.IG"
-                  ><li class="list-group-item">
-                    <strong>1.IG</strong> - 25 žáků
-                  </li></a
-                >
-                <a href="teacherPage-groupOverview.html?group=5.AG"
-                  ><li class="list-group-item">
-                    <strong>5.AG</strong> - 2 žáci
-                  </li></a
-                >
-                <a href="teacherPage-groupOverview.html?group=5.BG"
-                  ><li class="list-group-item">
-                    <strong>5.BG</strong> - 26 žáků
-                  </li></a
-                >
-              </ul>
-            </div>
-          </div>
+          
+          <h3>Rozložení známek</h3>
+          <canvas
+            id="doughnutChart"
+            style="width: 100%; width: 30vw"
+          ></canvas>
 
-          <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+          <button onclick="redirect()">Zadávání výsledků</button>
 
           <script>
             const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
             const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
 
-            
-            new Chart("myChart", {
-              type: "line",
+            const url = new URL(window.location.href);
+            const group = url.searchParams.get("group");
+
+            document.getElementById("classTitle").innerHTML = group;
+
+            new Chart("doughnutChart", {
+              type: "doughnut",
               data: {
-                labels: xValues,
+                labels: ["Red", "Blue", "Yellow"],
                 datasets: [
                   {
-                    fill: false,
-                    lineTension: 0,
-                    backgroundColor: "rgba(0,0,255,1.0)",
-                    borderColor: "rgba(0,0,255,0.1)",
-                    data: yValues,
+                    label: "My First Dataset",
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                      "rgb(255, 99, 132)",
+                      "rgb(54, 162, 235)",
+                      "rgb(255, 205, 86)",
+                    ],
+                    hoverOffset: 4,
                   },
                 ],
               },
@@ -113,6 +105,10 @@
                 },
               },
             });
+
+            const redirect = () => {
+                window.location.replace("./teacherPage-zadavaniVysledku2.html?group=" + group);
+            }
           </script>
         </div>
       </div>
